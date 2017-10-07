@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 project(libvterm)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -fPIC")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -fPIC -s")
 set(PROJECT_DESCRIPTION "A rxvt/vt100 terminal emulator library written in C.")
 
 if (("${CMAKE_C_COMPILER_ID}" STREQUAL "Clang") OR (("${CMAKE_C_COMPILER_ID}" STREQUAL "GNU") AND (CMAKE_C_COMPILER_VERSION VERSION_GREATER 4.0)))
